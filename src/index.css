@@ -1,7 +1,11 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Tajawal:wght@400;500;700;900&display=swap');
+:root {
+  font-family: 'DM Serif Display', serif;
+}
 
 body {
-  font-family: 'Tajawal', sans-serif;
-  height: 500vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

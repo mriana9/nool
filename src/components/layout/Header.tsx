@@ -79,18 +79,19 @@ export const Header = () => {
             onClick={toggleLanguage}
             className="p-2 hover:bg-white/50 rounded-xl transition-all flex items-center gap-2 text-sm font-bold text-slate-700 border border-transparent hover:border-slate-200"
           >
-            <Languages size={18} className="text-[#007bff]" />
+            <Languages size={18} className="text-[#00eeff]" />
+            
             <span className="hidden sm:inline">
               {i18n.language === "ar" ? "English" : "العربية"}
             </span>
           </button>
 
-          <button className="text-sm font-bold px-5 py-2 text-slate-700 hover:bg-white/50 rounded-xl transition-all">
+          <button className="text-sm hidden md:block font-bold px-5 py-2 text-slate-700 hover:bg-white/50 rounded-xl transition-all">
             {t("nav.login")}
           </button>
 
           <button
-            className="relative group overflow-hidden px-7 py-2.5 rounded-2xl text-white text-sm font-bold shadow-xl shadow-cyan-100 transition-all active:scale-95"
+            className="relative group overflow-hidden px-7 py-2.5 rounded-2xl text-white text-sm font-bold transition-all active:scale-95"
             style={{
               background: "linear-gradient(135deg, #007bff 0%, #00d2ff 100%)",
             }}
