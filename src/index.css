@@ -1,11 +1,17 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Tajawal:wght@400;500;700;900&display=swap');
+
+@theme {
+  --font-reem: "Reem Kufi", sans-serif;
+}
+
 :root {
-  font-family: 'DM Serif Display', serif;
+  font-family: var(--font-reem);
 }
 
 body {
   margin: 0;
+  font-family: var(
+    --font-reem
+  ) !important;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
