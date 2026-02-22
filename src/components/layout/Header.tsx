@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Languages, Sparkles } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
@@ -61,12 +61,11 @@ export const Header = () => {
             >
               {t("nav.features")}
             </a>
-            <a
-              href="#templates"
+            <Link to="/templates"
               className="text-sm font-bold text-slate-600 hover:text-[#007bff] transition-colors"
             >
               {t("nav.templates")}
-            </a>
+            </Link>
             <a
               href="#pricing"
               className="text-sm font-bold text-slate-600 hover:text-[#007bff] transition-colors"
