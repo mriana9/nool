@@ -92,7 +92,10 @@ export const Header = () => {
             </span>
           </button>
 
-          <button className="text-sm hidden md:block font-bold px-5 py-2 text-slate-700 hover:bg-white/50 rounded-xl transition-all">
+          <button
+            onClick={() => navigate("/login")}
+            className="text-sm cursor-pointer hidden md:block font-bold px-5 py-2 text-slate-700 hover:bg-white/50 rounded-xl transition-all"
+          >
             {t("nav.login")}
           </button>
 

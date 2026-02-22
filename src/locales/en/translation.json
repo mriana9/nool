@@ -77,6 +77,12 @@
     "login": "Log In",
     "visualTitle": "Turn Your Idea Into a Digital Reality with NOOL",
     "visualDesc": "The easiest platform to build websites in the Arab world. No coding experience required.",
-    "visualSubtitle": "Turn Your Idea Into a Digital Reality with NOOL"
+    "visualSubtitle": "Turn Your Idea Into a Digital Reality with NOOL",
+    "welcomeBack": "Welcome Back",
+    "loginSubtitle": "Log in to continue building your digital presence",
+    "forgotPassword": "Forgot your password?",
+    "loginAction": "Log In",
+    "noAccount": "Don't have an account?",
+    "joinFree": "Join Us for Free"
   }
 }

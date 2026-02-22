@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { AuthInput } from "./AuthInput";
-import { SocialAuth } from "./SocialAuth";
+import { AuthInput } from "../ui/AuthInput";
+import { SocialAuth } from "../ui/SocialAuth";
 import { Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,8 @@ export const RegisterForm = () => {
     <div className="max-w-md w-full mx-auto">
       <div className="mb-8 text-start">
         <div className="flex items-center gap-2 mb-2">
-          <Link to="/"
+          <Link
+            to="/"
             className="w-9 h-9 rounded-xl flex items-center justify-center text-white shadow-lg transition-transform group-hover:rotate-12"
             style={{
               background: "linear-gradient(135deg, #00d2ff 0%, #34e89e 100%)",
@@ -74,7 +75,7 @@ export const RegisterForm = () => {
 
         <button
           type="submit"
-          className="w-full text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98] mt-6"
+          className="w-full cursor-pointer text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98] mt-6"
           style={{
             background:
               "linear-gradient(135deg, #00d2ff 0%, #007bff 50%, #34e89e 100%)",
