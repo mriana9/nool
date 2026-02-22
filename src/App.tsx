@@ -2,6 +2,7 @@ import "./App.css";
 import { Features } from "./components/Features";
 import { Hero } from "./components/Hero";
 import { Header } from "./components/layout/Header";
+import { Tools } from "./components/Tools";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Hero />
       <Features />
+      <Tools />
     </>
   );
 }

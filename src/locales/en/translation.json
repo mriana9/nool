@@ -27,5 +27,14 @@
     "f2_desc": "Choose from hundreds of professionally designed templates that fit your brand identity and captivate your customers from the first moment.",
     "f3_title": "Comprehensive Support",
     "f3_desc": "Our team is always available in Arabic to assist you every step of the way, from start to launch."
+  },
+  "tools": {
+    "title": "Powerful Professional Tools, with Ultimate Simplicity.",
+    "item1_title": "Full Customization of Colors and Fonts",
+    "item1_desc": "Make your site reflect your identity perfectly without any design constraints.",
+    "item2_title": "SEO-Friendly",
+    "item2_desc": "Built-in tools to help your site appear on the first page of Google results.",
+    "item3_title": "Lightning-Fast Loading",
+    "item3_desc": "Our sites are built with the latest technologies to ensure the best experience for your customers."
   }
 }

@@ -33,7 +33,7 @@ export const Features = () => {
           <h2 className="text-3xl md:text-6xl font-black bg-gradient-to-r from-[#00d2ff] via-[#007bff] to-[#34e89e] bg-clip-text text-transparent mb-4">
             {t("features.title")}
           </h2>
-          <p className="text-slate-500 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-700 text-lg max-w-2xl mx-auto">
             {t("features.subtitle")}
           </p>
         </div>
