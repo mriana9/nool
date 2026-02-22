@@ -26,8 +26,11 @@ export const Header = () => {
     document.documentElement.lang = newLang;
   };
 
+  const isAr = i18n.language === "ar";
+
   return (
     <header
+      dir={isAr ? "rtl" : "ltr"}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white/70 backdrop-blur-lg shadow-sm py-2"

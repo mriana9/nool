@@ -83,6 +83,7 @@
     "forgotPassword": "Forgot your password?",
     "loginAction": "Log In",
     "noAccount": "Don't have an account?",
-    "joinFree": "Join Us for Free"
+    "joinFree": "Join Us for Free",
+    "orPhone": "Or with phone number"
   }
 }

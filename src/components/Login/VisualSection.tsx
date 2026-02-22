@@ -4,7 +4,7 @@ export const VisualSection = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="hidden lg:flex lg:w-[60%] relative items-center justify-center overflow-hidden">
+    <div className="hidden lg:flex lg:w-[60%] py-8 relative items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0"
         style={{
