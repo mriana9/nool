@@ -8,10 +8,13 @@ import {
   Plus,
   Type,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
   const { t, i18n } = useTranslation();
   const isAr = i18n.language === "ar";
+
+  const navigate = useNavigate();
 
   return (
     <section className="relative pt-32 pb-20 overflow-hidden">
@@ -49,6 +52,7 @@ export const Hero = () => {
         {/* Call to Action Buttons */}
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-5">
           <button
+            onClick={() => navigate("/register")}
             className="group relative px-10 py-4 rounded-2xl text-white font-bold text-lg transition-all hover:scale-105 active:scale-95 flex items-center gap-2 overflow-hidden"
             style={{
               background:

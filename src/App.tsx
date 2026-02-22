@@ -1,21 +1,16 @@
-import "./App.css";
-import { CTASection } from "./components/CTASection";
-import { Features } from "./components/Features";
-import { Hero } from "./components/Hero";
-import { Footer } from "./components/layout/Footer";
-import { Header } from "./components/layout/Header";
-import { Tools } from "./components/Tools";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Register } from "./pages/Register";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Features />
-      <Tools />
-      <CTASection />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
   );
 }
 
