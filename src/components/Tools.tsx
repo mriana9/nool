@@ -49,7 +49,7 @@ export const Tools = () => {
           <div className="relative group perspective-1000">
             <div className="absolute -inset-4 bg-gradient-to-tr from-cyan-400 via-blue-400 to-emerald-400 rounded-[1.5rem] blur-2xl opacity-20 group-hover:opacity-40 animate-gradient-xy transition duration-1000"></div>
 
-            <div className="relative bg-white/90 backdrop-blur-sm rounded-[2.5rem] border border-white shadow-xs p-6 md:p-8 aspect-[4/3] flex flex-col gap-6 transform transition-all duration-500 group-hover:rotate-1 group-hover:-translate-y-2">
+            <div className="relative bg-white/90 backdrop-blur-sm rounded-[1.5rem] border border-white shadow-xs p-6 md:p-8 aspect-[4/3] flex flex-col gap-6 transform transition-all duration-500 group-hover:rotate-1 group-hover:-translate-y-2">
               <div className="flex items-center gap-4">
                 <div className="h-4 w-32 bg-slate-100 rounded-full overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-200 to-transparent -translate-x-full animate-shimmer"></div>
@@ -59,7 +59,7 @@ export const Tools = () => {
                 </div>
               </div>
 
-              <div className="flex-1 bg-slate-50/50 rounded-3xl border border-dashed border-slate-200 flex flex-col p-4 md:p-6 gap-4 relative overflow-hidden">
+              <div className="flex-1 bg-slate-50/50 rounded-3xl border border-dashed border-slate-200 flex flex-col p-4 md:p-6 gap-4 relative">
                 <div className="h-32 w-full bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center px-6 gap-4 group/item transition-all hover:border-cyan-200">
                   <div className="w-12 h-12 rounded-xl bg-cyan-50 flex items-center justify-center text-cyan-500">
                     <div className="w-6 h-1 bg-current rounded-full"></div>
