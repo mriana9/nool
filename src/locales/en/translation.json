@@ -10,7 +10,8 @@
   "hero": {
     "title_top": "Build Your Website",
     "title_gradient": "With Ease and Professionalism",
-    "description": "NOOL empowers small business owners to design their digital presence in minutes without coding experience. Start today and turn your idea into reality.",    "cta_primary": "Start for Free",
+    "description": "NOOL empowers small business owners to design their digital presence in minutes without coding experience. Start today and turn your idea into reality.",
+    "cta_primary": "Start for Free",
     "cta_primary": "Start for Free",
     "cta_secondary": "View Templates",
     "preview_text": "Interactive Builder Preview (Coming Soon)"
@@ -36,5 +37,28 @@
     "item2_desc": "Built-in tools to help your site appear on the first page of Google results.",
     "item3_title": "Lightning-Fast Loading",
     "item3_desc": "Our sites are built with the latest technologies to ensure the best experience for your customers."
+  },
+  "cta": {
+    "title": "Ready to launch your site?",
+    "desc": "Join over 5,000 small businesses that trust NOOL for their digital presence.",
+    "primary": "Start for Free",
+    "secondary": "Contact Sales"
+  },
+  "footer": {
+    "description": "The first Arabic platform to build websites with ease and high professionalism. We aim to empower every business owner.",
+    "product": "Product",
+    "support": "Support",
+    "company": "Company",
+    "rights": "All rights reserved.",
+    "lang": "English (US)",
+    "features": "Features",
+    "templates": "Templates",
+    "updates": "Updates",
+    "help_center": "Help Center",
+    "customer_support": "Customer Support",
+    "pricing": "Pricing",
+    "about": "About Us",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
   }
 }
