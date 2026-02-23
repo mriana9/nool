@@ -15,17 +15,16 @@ export const EditorNavbar = () => {
           <span className="material-symbols-outlined text-sm md:text-base">
             rocket_launch
           </span>
-          <span className="hidden xs:inline">{t("templates.publish")}</span>
+          <span>{t("templates.publish")}</span>
         </button>
 
         <button className="text-gray-600 flex items-center gap-1 text-sm hover:bg-gray-50 px-2 md:px-3 py-1.5 rounded-lg transition-all shrink-0">
           <span className="material-symbols-outlined text-lg">visibility</span>
-          <span className="hidden sm:inline">{t("templates.preview")}</span>
+          <span>{t("templates.preview")}</span>
         </button>
       </div>
 
       <div className="flex items-center gap-3 md:gap-6">
-        {/* حالة الحفظ: النص يختفي تماماً في الجوال وتظهر النقطة الخضراء فقط */}
         <div className="flex items-center gap-2 text-gray-400">
           <span className="text-[11px] hidden lg:inline whitespace-nowrap">
             {t("templates.saveAllChanges")}
@@ -35,14 +34,14 @@ export const EditorNavbar = () => {
 
         <div className="h-4 w-[1px] bg-gray-200 hidden xs:block"></div>
 
-        <div className="flex gap-1 md:gap-2">
+        {/* <div className="flex gap-1 md:gap-2">
           <button className="p-1 text-gray-400 hover:text-gray-600">
             <span className="material-symbols-outlined text-xl">redo</span>
           </button>
           <button className="p-1 text-gray-400 hover:text-gray-600">
             <span className="material-symbols-outlined text-xl">undo</span>
           </button>
-        </div>
+        </div> */}
       </div>
     </header>
   );

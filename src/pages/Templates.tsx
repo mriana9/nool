@@ -10,7 +10,7 @@ export const Templates = () => {
     >
       <TemplatesHero />
 
-      <main className="max-w-7xl mx-auto px-4 mb-5">
+      <main className="max-w-7xl mx-auto pt-8 px-8">
         <TemplatesGrid />
       </main>
     </div>

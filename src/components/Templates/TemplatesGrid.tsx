@@ -9,6 +9,34 @@ export const TemplatesGrid = () => {
       isPro: true,
       image: "/zarkasha1.PNG",
     },
+    {
+      id: "2",
+      title: "زركشة ",
+      category: "معرض أعمال إبداعي",
+      isPro: true,
+      image: "/zarkasha1.PNG",
+    },
+    {
+      id: "3",
+      title: "زركشة ",
+      category: "معرض أعمال إبداعي",
+      isPro: true,
+      image: "/zarkasha1.PNG",
+    },
+    {
+      id: "4",
+      title: "زركشة ",
+      category: "معرض أعمال إبداعي",
+      isPro: true,
+      image: "/zarkasha1.PNG",
+    },
+    {
+      id: "5",
+      title: "زركشة ",
+      category: "معرض أعمال إبداعي",
+      isPro: true,
+      image: "/zarkasha1.PNG",
+    },
   ];
 
   return (

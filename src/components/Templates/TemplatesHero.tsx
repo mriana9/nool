@@ -5,7 +5,7 @@ export const TemplatesHero = () => {
 
   return (
     <section className="pt-18 py-8 px-4">
-      <div className="max-w-4xl mx-auto text-center p-8 rounded-xl bg-[linear-gradient(135deg,rgba(0,210,255,0.2)_0%,rgba(52,232,158,0.2)_100%)]">
+      <div className="max-w-6xl mx-auto text-center p-8 rounded-xl bg-[linear-gradient(135deg,rgba(0,210,255,0.2)_0%,rgba(52,232,158,0.2)_100%)]">
         <h1 className="text-4xl md:text-5xl font-black bg-gradient-to-l from-[#00d2ff] to-[#007bff] bg-clip-text text-transparent mb-4">
           {t("templates.title")}
         </h1>
