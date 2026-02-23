@@ -94,7 +94,12 @@ export const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-slate-50 flex flex-col md:flex-row justify-between items-center gap-6">
         <p className="text-slate-400 text-sm font-medium">
-          © 2026 نول. {t("footer.rights")}
+          © 2026{" "}
+          <span className=" bg-gradient-to-l from-[#00d2ff] to-[#007bff] bg-clip-text text-transparent">
+            {" "}
+            {i18n.language === "ar" ? "نول" : "NOOL"}
+          </span>
+          . {t("footer.rights")}
         </p>
         <div className="flex items-center gap-2 text-slate-500 text-sm font-bold bg-slate-50 px-4 py-2 rounded-full border border-slate-100">
           <Globe size={16} className="text-cyan-500" />

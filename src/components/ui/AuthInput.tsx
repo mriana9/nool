@@ -39,7 +39,6 @@ export const AuthInput = ({
           className={`w-full py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent 
             outline-none transition-all duration-300
             dark:text-white placeholder:text-slate-400
-            /* تعديلات الـ Focus هنا */
             focus:border-cyan-400 focus:ring-4 focus:ring-cyan-500/10
             ${isAr ? "pr-11 pl-4" : "pl-11 pr-4"}`}
         />

@@ -85,5 +85,15 @@
     "noAccount": "Don't have an account?",
     "joinFree": "Join Us for Free",
     "orPhone": "Or with phone number"
+  },
+  "templates": {
+    "title": "Choose the Perfect Template for Your Project",
+    "description": "Explore our wide range of professionally designed templates that cater to various industries and styles. Whether you're a restaurant, a fashion boutique, or a tech startup, we have the perfect design to make your website stand out.",
+    "searchPlaceholder": "Search templates...",
+    "allTemplates": "All Templates",
+    "recommendedTemplates": "Recommended Templates",
+    "publish": "Publish Site",
+    "preview": "Preview Site",
+    "saveAllChanges": "Save All Changes..."
   }
 }
