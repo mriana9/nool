@@ -4,7 +4,7 @@ export const EditorNavbar = () => {
   const { t } = useTranslation();
 
   return (
-    <header className="h-14 bg-white border-b border-gray-200 flex items-center justify-between px-3 md:px-6 z-20">
+    <header className="h-14 bg-white border-b border-gray-200 flex items-center justify-between px-3 md:px-6 z-20" >
       <div className="flex items-center gap-2 md:gap-4">
         <button
           className="text-white cursor-pointer px-3 md:px-5 py-1.5 rounded-lg text-sm font-bold flex items-center gap-2 shadow-sm transition-colors shrink-0"

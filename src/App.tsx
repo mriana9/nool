@@ -27,7 +27,7 @@ const LayoutWrapper = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/templates" element={<Templates />} />
-          <Route path="/nool-builder/:templateId" element={<TemplateEditor />} />
+          <Route path="/nool-builder/:templateName" element={<TemplateEditor />} />
         </Routes>
       </main>
 

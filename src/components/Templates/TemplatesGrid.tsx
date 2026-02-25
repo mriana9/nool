@@ -3,7 +3,7 @@ import { TemplateCard } from "./TemplateCard";
 export const TemplatesGrid = () => {
   const templates = [
     {
-      id: "1",
+      id: "zarkasha",
       title: "زركشة ",
       category: "معرض أعمال إبداعي",
       isPro: true,

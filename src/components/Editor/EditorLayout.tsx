@@ -7,15 +7,14 @@ export const EditorLayout = ({ children }: { children: React.ReactNode }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div
-      className="flex flex-col md:flex-row h-screen bg-[#F3F4F6] mt-20 overflow-hidden relative"
-    >
+    <div className="flex flex-col md:flex-row h-screen bg-[#F3F4F6] mt-20 overflow-hidden relative">
       <div
         className={`
         fixed inset-y-0 right-0 z-[60] w-[280px] bg-white transform transition-transform duration-300 ease-in-out
         md:relative md:translate-x-0 md:z-30
         ${isSidebarOpen ? "translate-x-0" : "translate-x-full md:translate-x-0"}
       `}
+        dir={i18n.language === "ar" ? "rtl" : "ltr"}
       >
         <button
           onClick={() => setIsSidebarOpen(false)}
@@ -41,7 +40,6 @@ export const EditorLayout = ({ children }: { children: React.ReactNode }) => {
         </main>
       </div>
 
-      {/* 3. الزر العائم لفتح القائمة في الجوال */}
       {!isSidebarOpen && (
         <button
           onClick={() => setIsSidebarOpen(true)}
