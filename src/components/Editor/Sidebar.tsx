@@ -30,9 +30,9 @@ export const Sidebar = () => {
         <div className="space-y-4">
           <div className="rounded-xl cursor-pointer hover:ring-2 ring-cyan-500 transition-all">
             <img
-                src="/zarkasha1.PNG"
-                alt="Template image"
-                className="w-full h-full object-cover rounded-xl"
+              src="/zarkasha1.PNG"
+              alt="Template image"
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
         </div>
