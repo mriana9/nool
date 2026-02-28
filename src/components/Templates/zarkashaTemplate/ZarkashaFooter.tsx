@@ -1,11 +1,8 @@
-import React from "react";
 
 export const ZarkashaFooter = ({
   primaryColor,
-  data,
 }: {
   primaryColor?: string;
-  data: Record<string, unknown>;
 }) => {
   return (
     <footer className="bg-slate-900 text-slate-300 py-16 px-6" dir="rtl">

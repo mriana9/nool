@@ -1,11 +1,8 @@
-import React from "react";
 
 export const ZarkashaGallery = ({
   primaryColor,
-  data,
 }: {
   primaryColor?: string;
-  data: Record<string, unknown>;
 }) => {
   const products = [
     {

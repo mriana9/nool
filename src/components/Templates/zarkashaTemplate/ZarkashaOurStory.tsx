@@ -1,11 +1,8 @@
-import React from "react";
 
 export const ZarkashaOurStory = ({
   primaryColor,
-  data,
 }: {
   primaryColor?: string;
-  data: Record<string, unknown>;
 }) => {
   return (
     <section

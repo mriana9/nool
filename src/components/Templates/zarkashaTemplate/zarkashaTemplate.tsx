@@ -32,14 +32,13 @@ export const ZarkashaTemplate = ({
         setSiteData={setSiteData}
       />
       <main>
-        <ZarkashaHero primaryColor={primaryColor} data={siteData.hero} />
-        <ZarkashaOurStory primaryColor={primaryColor} data={siteData.about} />
+        <ZarkashaHero primaryColor={primaryColor} />
+        <ZarkashaOurStory primaryColor={primaryColor} />
         <ZarkashaGallery
           primaryColor={primaryColor}
-          data={siteData.collection}
         />
       </main>
-      <ZarkashaFooter primaryColor={primaryColor} data={siteData.footer} />
+      <ZarkashaFooter primaryColor={primaryColor} />
     </div>
   );
 };
