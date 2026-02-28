@@ -1,6 +1,6 @@
 import { TemplatesGrid } from "../components/Templates/TemplatesGrid";
 import { TemplatesHero } from "../components/Templates/TemplatesHero";
-import i18n from "../i18n";
+import i18n from "../config/i18n";
 
 export const Templates = () => {
   return (

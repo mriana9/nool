@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 
-export const EditorNavbar = () => {
+export const EditorNavbar = ({ isSaving }: { isSaving: boolean }) => {
   const { t } = useTranslation();
 
   return (
-    <header className="h-14 bg-white border-b border-gray-200 flex items-center justify-between px-3 md:px-6 z-20" >
+    <header className="h-14 bg-white border-b border-gray-200 flex items-center justify-between px-3 md:px-6 z-20">
       <div className="flex items-center gap-2 md:gap-4">
         <button
           className="text-white cursor-pointer px-3 md:px-5 py-1.5 rounded-lg text-sm font-bold flex items-center gap-2 shadow-sm transition-colors shrink-0"
@@ -27,9 +27,15 @@ export const EditorNavbar = () => {
       <div className="flex items-center gap-3 md:gap-6">
         <div className="flex items-center gap-2 text-gray-400">
           <span className="text-[11px] hidden lg:inline whitespace-nowrap">
-            {t("templates.saveAllChanges")}
+            {isSaving ? "جاري الحفظ..." : t("templates.saveAllChanges")}{" "}
           </span>
-          <div className="w-2 h-2 bg-green-500 rounded-full shadow-[0_0_8px_rgba(34,197,94,0.5)] shrink-0"></div>
+          <div
+            className={`w-2 h-2 bg-green-500 rounded-full shrink-0 transition-all ${
+              isSaving
+                ? "animate-pulse-green scale-125"
+                : "shadow-[0_0_8px_rgba(34,197,94,0.5)]"
+            }`}
+          ></div>
         </div>
 
         <div className="h-4 w-[1px] bg-gray-200 hidden xs:block"></div>

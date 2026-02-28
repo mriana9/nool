@@ -1,8 +1,20 @@
 import { useTranslation } from "react-i18next";
-import i18n from "../../i18n";
+import i18n from "../../config/i18n";
+import { useNavigate } from "react-router-dom";
 
-export const Sidebar = () => {
+interface SidebarProps {
+  primaryColor: string;
+  setPrimaryColor: (color: string) => void;
+}
+
+export const Sidebar = ({ primaryColor, setPrimaryColor }: SidebarProps) => {
   const { t } = useTranslation();
+
+  const navigate = useNavigate();
+
+  const templates = [
+    { id: "zarkasha", name: "Zarkasha", img: "/zarkasha1.PNG" },
+  ];
 
   return (
     <aside
@@ -28,12 +40,34 @@ export const Sidebar = () => {
         </div>
 
         <div className="space-y-4">
-          <div className="rounded-xl cursor-pointer hover:ring-2 ring-cyan-500 transition-all">
-            <img
-              src="/zarkasha1.PNG"
-              alt="Template image"
-              className="w-full h-full object-cover rounded-xl"
+          {templates.map((temp) => (
+            <div
+              key={temp.id}
+              onClick={() => navigate(`/nool-builder/${temp.id}`)}
+              className="rounded-xl cursor-pointer hover:ring-2 ring-cyan-500 transition-all border border-gray-100 overflow-hidden"
+            >
+              <img src={temp.img} alt={temp.name} className="w-full h-auto" />
+              <p className="p-2 text-xs text-center font-medium bg-gradient-to-l from-[#00d2ff] to-[#007bff] bg-clip-text text-transparent">
+                {temp.name}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="space-y-2">
+          <label className="text-[11px] text-gray-400 font-bold uppercase tracking-wider">
+            اللون الأساسي للقالب
+          </label>
+          <div className="flex items-center gap-3 p-2 border rounded-lg hover:border-cyan-500 transition-colors">
+            <input
+              type="color"
+              value={primaryColor}
+              onChange={(e) => setPrimaryColor(e.target.value)}
+              className="w-8 h-8 rounded-md cursor-pointer border-none bg-transparent"
             />
+            <span className="text-xs font-mono text-gray-600 uppercase">
+              {primaryColor}
+            </span>
           </div>
         </div>
       </div>

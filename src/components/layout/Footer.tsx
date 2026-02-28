@@ -96,7 +96,6 @@ export const Footer = () => {
         <p className="text-slate-400 text-sm font-medium">
           © 2026{" "}
           <span className=" bg-gradient-to-l from-[#00d2ff] to-[#007bff] bg-clip-text text-transparent">
-            {" "}
             {i18n.language === "ar" ? "نول" : "NOOL"}
           </span>
           . {t("footer.rights")}

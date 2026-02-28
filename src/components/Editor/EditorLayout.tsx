@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { Sidebar } from "./Sidebar";
 import { EditorNavbar } from "./EditorNavbar";
-import i18n from "../../i18n";
-
-export const EditorLayout = ({ children }: { children: React.ReactNode }) => {
+import i18n from "../../config/i18n";
+export const EditorLayout = ({ children,isSaving, primaryColor, setPrimaryColor }: { children: React.ReactNode; isSaving:boolean; primaryColor: string; setPrimaryColor: (color: string) => void }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="flex flex-col md:flex-row h-screen bg-[#F3F4F6] mt-20 overflow-hidden relative">
+    <div className="flex flex-col md:flex-row bg-[#F3F4F6] mt-20 overflow-hidden relative">
       <div
         className={`
-        fixed inset-y-0 right-0 z-[60] w-[280px] bg-white transform transition-transform duration-300 ease-in-out
+        fixed inset-y-0 right-0 z-[60] w-[280px] h-[100vh] bg-white transform transition-transform duration-300 ease-in-out
         md:relative md:translate-x-0 md:z-30
         ${isSidebarOpen ? "translate-x-0" : "translate-x-full md:translate-x-0"}
       `}
@@ -22,7 +21,10 @@ export const EditorLayout = ({ children }: { children: React.ReactNode }) => {
         >
           <span className="material-symbols-outlined">close</span>
         </button>
-        <Sidebar />
+        <Sidebar
+          primaryColor={primaryColor}
+          setPrimaryColor={setPrimaryColor}
+        />
       </div>
 
       {isSidebarOpen && (
@@ -33,7 +35,7 @@ export const EditorLayout = ({ children }: { children: React.ReactNode }) => {
       )}
 
       <div className="flex-1 flex flex-col relative h-full overflow-hidden">
-        <EditorNavbar />
+        <EditorNavbar isSaving ={isSaving}  />
 
         <main className="flex-1 overflow-y-auto p-4 md:p-12 bg-[#F0F2F5] flex justify-center relative">
           <div className="w-full max-w-full md:max-w-5xl">{children}</div>
